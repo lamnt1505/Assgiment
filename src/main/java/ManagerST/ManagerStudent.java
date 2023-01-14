@@ -25,8 +25,5 @@ public class ManagerStudent {
         }
     }
 
-//    public int compare(Student student1, Student student2){
-//        return student1.getLop().compareTo(student2.getLop());
-//    }
 
 }

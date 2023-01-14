@@ -48,4 +48,13 @@ public class Student {
     public void setLop(String lop) {
         this.lop = lop;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +"name='" + name + '\'' +
+                ", tuoi=" + tuoi +
+                ", id='" + id + '\'' +
+                ", lop='" + lop + '\'' +
+                '}';
+    }
 }
