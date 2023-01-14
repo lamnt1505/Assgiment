@@ -11,8 +11,9 @@ public class Main {
         do {
             System.out.println("MENU ---------- ");
             System.out.println("Vui lòng chọn chức năng: ");
-            System.out.println("1.	Thêm sinh viên vào danh sách.\n");
-            System.out.println("2.  Hiển thị danh sách sinh viên.\n");
+            System.out.println("1.	Thêm sinh viên vào danh sách.");
+            System.out.println("2.  Hiển thị danh sách sinh viên.");
+            System.out.println("3.  Hiển thị danh sách sinh viên theo lớp.");
             select = sc.nextInt();
             sc.nextLine();
             if(select == 1){
@@ -28,6 +29,8 @@ public class Main {
                 dsst.add(st);
             } else if (select == 2) {
                 dsst.inDanhSachStudent();
+            } else if (select == 3) {
+                //dsst.
             }
         }while (select != 0);
     }
