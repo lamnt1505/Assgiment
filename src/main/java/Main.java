@@ -19,18 +19,15 @@ public class Main {
             if(select == 1){
                 System.out.println("Nhập Họ và Tên: ");
                 String name = sc.nextLine();
-                System.out.println("Nhập Lớp: ");
-                String lop = sc.nextLine();
                 System.out.println("Nhập ID: ");
                 String id = sc.nextLine();
                 System.out.println("Nhập Tuổi: ");
                 Integer tuoi = sc.nextInt();
-                Student st = new Student(name,tuoi,lop,id);
+                Student st = new Student(name,tuoi,id);
                 dsst.add(st);
             } else if (select == 2) {
                 dsst.inDanhSachStudent();
             } else if (select == 3) {
-                //dsst.
             }
         }while (select != 0);
     }

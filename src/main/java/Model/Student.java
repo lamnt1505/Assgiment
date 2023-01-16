@@ -1,20 +1,32 @@
 package Model;
 
 public class Student {
+
     private String name;
 
     private Integer tuoi;
 
-    private String id,lop;
+    private String id;
+
+    public StudentClass getStudentClass() {
+        return studentClass;
+    }
+
+    public void setStudentClass(StudentClass studentClass) {
+        this.studentClass = studentClass;
+    }
+
+    private StudentClass studentClass;
 
     public Student() {
     }
 
-    public Student(String name, Integer tuoi, String id, String lop) {
+
+
+    public Student(String name, Integer tuoi, String id) {
         this.name = name;
         this.tuoi = tuoi;
         this.id = id;
-        this.lop = lop;
     }
 
     public String getName() {
@@ -41,20 +53,12 @@ public class Student {
         this.id = id;
     }
 
-    public String getLop() {
-        return lop;
-    }
-
-    public void setLop(String lop) {
-        this.lop = lop;
-    }
 
     @Override
     public String toString() {
         return "Student{" +"name='" + name + '\'' +
                 ", tuoi=" + tuoi +
                 ", id='" + id + '\'' +
-                ", lop='" + lop + '\'' +
                 '}';
     }
 }
