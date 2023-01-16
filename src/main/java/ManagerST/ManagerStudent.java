@@ -1,11 +1,12 @@
 package ManagerST;
 
 import Model.Student;
+import Model.StudentClass;
 
 import java.util.ArrayList;
 
 public class ManagerStudent {
-    private ArrayList<Student> list = new ArrayList<>();
+    private ArrayList<Student> list = new ArrayList<Student>();
 
     public ManagerStudent(){
         this.list = new ArrayList<Student>();
