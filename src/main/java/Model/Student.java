@@ -21,7 +21,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(String name, Integer tuoi) {//StudentClass studentClass
+    public Student(String name, Integer tuoi) {//,StudentClass studentClass
         this.name = name;
         this.tuoi = tuoi;
         //this.studentClass = studentClass;
@@ -48,6 +48,6 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", tuoi=" + tuoi + '}';
-    }//", studentClass=" + studentClass +
+                ", tuoi=" + tuoi +'}';
+    }// ", studentClass=" + studentClass +
 }

@@ -2,10 +2,10 @@ package Model;
 
 public class StudentClass {
     
-    int id;
+    Integer id;
     String studentClass;
 
-    public StudentClass() {
+    public StudentClass(String studentClass) {
     }
 
     public StudentClass(int id, String studentClass) {
@@ -22,6 +22,11 @@ public class StudentClass {
     }
 
     public String getStudentClass() {
+        return studentClass;
+    }
+
+    @Override
+    public String toString() {
         return studentClass;
     }
 
